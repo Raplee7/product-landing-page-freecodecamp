@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    padding: 15px 50px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+#header-img {
+    height: 5vh;
+}
+main {
+    margin-top: 65px;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1547927168-17021e7ef8c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 50px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+#email {
+    width: 500px;
+    height: 30px;
+    margin: 30px;
+    padding: 0 10px;
+}
+
+#submit {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: orange;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+.container {
+    width: 74%;
+    margin: 0 auto;
+}
+.container h1 {
+    color: orange;
+    text-align: center;
+    padding: 100px;
+    font-size: 30px;
+}
+
+.feature i {
+    color: orange;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87px;
+}
+.feature {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.feature .desc {
+    margin-left: 60px;
+}
+.feature p {
+    text-align: justify;
+}
+#how-it-works {
+    text-align: center;
+}
+#how-it-works iframe {
+    width: 70%;
+    height: 30vw;
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+}
+.card-content {
+    border: 1px solid black;
+    width: 300px;
+    text-align: center;
+}
+.card-content ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+.card-content h3 {
+    padding: 10px 0;
+    background-color: darkgrey;
+}
+
+.card-content .circle {
+    background-color: orange;
+    height: 160px;
+    width: 160px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.card-content button {
+    width: 170px;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+    background-color: darkgrey;
+    margin: 20px 0;
+    font-size: 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.card-content button:hover {
+    background-color: orange;
+}
+
+footer {
+    background-color: darkgrey;
+    margin-top: 80px;
+    padding: 10px 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    list-style: none;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        padding: 10px 0 0 5px;
+    }
+    nav ul {
+        flex-direction: column;
+        line-height: 40px;
+        text-align: center;
+    }
+    .hero h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .hero form {
+        align-items: center;
+    }
+
+    #email {
+        width: 150%;
+    }
+    .feature {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .feature i {
+        margin: 20px auto;
+    }
+    .feature .desc {
+        margin: 0 auto;
+    }
+    .feature .desc p {
+        margin-top: 20px;
+    }
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-content {
+        margin-bottom: 50px;
+    }
+    footer {
+        margin-top: 10px;
+    }
+}
